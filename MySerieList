@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>MySeriesList | Acompanhe melhor as suas séries preferidas</title>
+    <style>     
+        body {
+            font-family:Tahoma;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 3fr 6fr 3fr;
+            column-gap: 10px;
+            background-color: #EEEEEE;
+            grid-row-gap: 30px;
+            grid-template-areas:"head head head"
+                                "nav  main dir"
+                                "foot  foot foot";
+        }            
+        
+        body > header{
+    
+            background-color: #AAD8D3;
+            grid-area: head;
+            text-align: center;
+            font-family:Noto Sans, sans-serif;
+        }
+
+        body > header >h1{
+            font-size: 90px;
+        }
+        body aside {
+            text-align: center;
+            grid-area: dir;
+        }  
+        body main footer {
+            grid-area: foot;
+            text-align: left;
+            font-size: small;
+        } 
+        body footer {
+            grid-area: foot;
+            text-align: center;
+        } 
+        body main {
+            grid-area: main;
+            text-align: justify; 
+           } 
+        header {
+            text-align: center;
+        }
+        article{
+            border-style: solid;
+            background-color: #AAD8D3;
+            padding-top:12px;
+            padding-right: 36px;
+            padding-left: 36px;
+            padding-bottom: 12px;
+        }
+        a { 
+            text-decoration: none;
+        }
+        nav>ul >li{
+            align-content: flex-end;
+            display: inline;
+        }
+        nav>ol{
+            text-align: left;
+        }   
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index2.html">Lista Completa das suas Séries -</a></li>
+                <li><a href="index3.html">Sua Série Preferida -</a></li>
+                <li><a href="#series-em-alta">Séries em Alta -</a></li>
+                <li><a href="#series-em-destaque">Séries em Destaque para você </a></li>
+            </ul>
+        </nav>
+        <h1>MySeriesList</h1>
+        <h2>Liste todas as series que voce já assistiu</h2>
+    </header>
+    
+    <main>
+        <section id="series-em-alta">
+            <header>
+                <h2>Séries em Alta</h2>
+            </header>
+            <article>
+                <header>
+                    <h3>Round6 é a serie mais assistida de todos os tempos!</h3>
+                    <img src="https://terradaslendas.com/wp-content/uploads/2021/10/round-6.jpeg" alt="serie round6" height="200" width="400">
+                    
+                </header>
+                <div>
+                    <p>A série coreana round6 foi assistida por mais de 100 milhões de lares e se tornou a serie mais assistidas de todos os tempos!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum posuere sem eget mollis.Donec fermentum luctus convallis. Phasellus sit amet imperdiet felis. Morbi laoreet nisi sit amet condimentum pellentesque.</p>
+                </div>
+                <footer>
+                    <p>Fonte: <a href="https://www.opovo.com.br/vidaearte/2021/10/13/round-6-se-torna-a-serie-mais-assistida-de-todos-os-tempos-da-netflix.html">https://www.opovo.com.br/vidaearte/2021/10/13/round-6-se-torna-a-serie-mais-assistida-de-todos-os-tempos-da-netflix.html</a></p> 
+                </footer>
+            </article>         
+        
+            <article>
+                <header>
+                    <h3>O Gambito da Rainha: vencedora de onze prêmios Emmy</h3>
+                    <img src="https://i2.wp.com/cenasdecinema.com/wp-content/uploads/2020/11/O-gambito-da-rainha_destaque.jpg?fit=1200%2C675&ssl=1" alt="serie round6" height="220" width="400">
+    
+                </header> 
+                <div>
+                    <p> A série foi vencedora de onze prêmios Emmy, inclusive de Melhor Minissérie, e do Globo de Ouro de Melhor Minissérie e Melhor Atriz </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum posuere sem eget mollis. </p>
+                    <p>Donec fermentum luctus convallis. Phasellus sit amet imperdiet felis. </p>
+                </div>
+                <footer>
+                    <p>Fonte: <a href="https://jovemnerd.com.br/nerdbunker/the-crown-o-gambito-da-rainha-lideram-emmy-2021/">https://jovemnerd.com.br/nerdbunker/the-crown-o-gambito-da-rainha-lideram-emmy-2021/</a></p> 
+                </footer>
+            </article>         
+        
+            <article>
+                <header>
+                    <h3>Quer distopia? Então toma: Black Mirror</h3>
+                    <img src="https://cdn-images-1.medium.com/max/1200/1*-h1F-dn6_B2yWKsT1vPsLg.jpeg" alt="Black mirror" height="200" width="400">
+                </header> 
+                <div>
+                    <p>Black mirror é a serie de ficção científica distópica que se assemelha ao nosso dia-a-dia.</p>
+                    <p>Donec fermentum luctus convallis. Phasellus sit amet imperdiet felis. </p>
+                    <p>Morbi laoreet nisi sit amet condimentum pellentesque.</p>
+                </div>
+                <footer>
+                    <p>Fonte: <a href="https://cointimes.com.br/black-mirror-no-blockchain-a-distopia-virando-realidade/">https://cointimes.com.br/black-mirror-no-blockchain-a-distopia-virando-realidade/</a></p> 
+                </footer>
+            </article>         
+
+            <article>
+                <header>
+                    <h3>Série para Maratonar: La Casa de Papel</h3>
+                    <img src="https://i0.wp.com/cloud.estacaonerd.com/wp-content/uploads/2020/03/29143217/1046872-scaled.jpg?fit=2560%2C1488&ssl=1" alt="Serie la casa de papel" height="200" width="400">
+                </header> 
+                <div>
+                    <p>La casa de Papel é a história do maior roubo da casa de moeda da Espanha</p>
+                    <p>Donec fermentum luctus convallis. Phasellus sit amet imperdiet felis. </p>
+                    <p>Morbi laoreet nisi sit amet condimentum pellentesque.</p>
+                </div>
+                <footer>
+                    <p>Fonte: <a href="https://www.terra.com.br/diversao/tv/series/la-casa-de-papel-e-as-novidades-da-star-pra-maratonar,542d645b83913f3491b8aac85fb5d9bedv02c4fg.html">https://www.terra.com.br/diversao/tv/series/la-casa-de-papel-e-as-novidades-da-star-pra-maratonar,542d645b83913f3491b8aac85fb5d9bedv02c4fg.html</a></p> 
+                </footer>
+            </article>  
+        </section>
+    </main>
+
+    <aside>
+        <header> 
+            <h2>Séries em Destaque para Você</h2>
+        </header>
+        <nav id="series-em-destaque">
+            <ol type="I">
+                <li><a href="index3.html">Dark</a></li>
+                <li><a href="index3.html">Better Call Sall</a></li>
+                <li><a href="index3.html">12 Monkeys</a></li>
+                <li><a href="index3.html">Doctor Who</a></li>
+                <li><a href="index3.html">Sense 8</a></li>
+                <li><a href="index3.html">Sherlock</a></li>
+                <li><a href="index3.html">Altered Carbon</a></li>
+                <li><a href="index3.html">The Umbrela Academy</a></li>
+            </ol>
+        </nav>            
+        
+    </aside>
+    
+    <footer>
+        <p>2021 © Copyright MySeriesList</p>
+    </footer>
+</body>
+</html>
